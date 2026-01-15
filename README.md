@@ -2,6 +2,10 @@
 
 Play video as ASCII art in your terminal.
 
+<!-- Demo video: replace assets/demo.mp4 with your demo file or a hosted URL -->
+<video src="assets/vid.mp4" controls width="640">Your browser does not support the video tag.</video>
+
+
 ## Prerequisites
 - Python 3.8 or newer
 - Git (optional)
