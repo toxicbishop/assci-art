@@ -1,7 +1,19 @@
-import cv2
+import importlib
+import subprocess
+import sys
 import os
 import time
 import numpy as np
+
+def _ensure_cv2():
+    try:
+        return importlib.import_module('cv2')
+    except Exception:
+        print("cv2 (OpenCV) not found, attempting to install opencv-python...")
+        subprocess.check_call([sys.executable, "-m", "pip", "install", "opencv-python"])
+        return importlib.import_module('cv2')
+
+cv2 = _ensure_cv2()
 
 def convert_frame_to_ascii(frame, width=80):
     """
