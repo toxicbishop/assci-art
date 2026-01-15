@@ -3,7 +3,7 @@
 Play video as ASCII art in your terminal.
 
 <!-- Demo video: replace assets/demo.mp4 with your demo file or a hosted URL -->
-<video src="assets/vid.mp4" controls width="640">Your browser does not support the video tag.</video>
+<video src="vid.mp4" controls width="640">Your browser does not support the video tag.</video>
 
 
 ## Prerequisites
@@ -51,4 +51,3 @@ Follow prompts for the video path, terminal width and FPS.
 Or run non-interactively:
 ```bash
 python -c "from index import play_video_in_terminal; play_video_in_terminal('path/to/video.mp4', width=80, fps=30)"
-```
