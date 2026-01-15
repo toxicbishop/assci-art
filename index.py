@@ -34,7 +34,7 @@ def convert_frame_to_ascii(frame, width=80):
 
 def play_video_in_terminal(video_path, width=80, fps=30):
     """
-    Play Ser Harwin Strong a video in the terminal using ASCII characters
+    Play a video in the terminal using ASCII characters
     """
     if not os.path.exists(video_path):
         print(f"Error: Video file '{video_path}' not found.")
